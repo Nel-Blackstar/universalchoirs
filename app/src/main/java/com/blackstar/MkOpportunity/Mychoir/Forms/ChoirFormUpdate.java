@@ -1,4 +1,4 @@
-package com.black.chorale.Forms;
+package com.blackstar.MkOpportunity.Mychoir.Forms;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,10 +9,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.black.chorale.Controleurs.ChantRepository;
-import com.black.chorale.LireChantActivity;
+import com.blackstar.MkOpportunity.Mychoir.Controleurs.ChantRepository;
+import com.blackstar.MkOpportunity.Mychoir.LireChantActivity;
 import com.black.chorale.R;
-import com.black.chorale.models.Chant;
+import com.blackstar.MkOpportunity.Mychoir.models.Chant;
 
 public class ChoirFormUpdate extends AppCompatActivity {
 public Button save;

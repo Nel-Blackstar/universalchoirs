@@ -1,7 +1,6 @@
-package com.black.chorale.adapters;
+package com.blackstar.MkOpportunity.Mychoir.adapters;
 
 import android.content.Context;
-import android.content.res.AssetManager;
 import android.support.annotation.NonNull;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,9 +10,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.black.chorale.R;
-import com.black.chorale.models.Chant;
+import com.blackstar.MkOpportunity.Mychoir.models.Chant;
 
-import java.util.ArrayList;
 import java.util.List;
 public class BsAdapter extends ArrayAdapter<Chant> {
     List<Chant> chants=null;

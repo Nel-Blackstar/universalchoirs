@@ -1,4 +1,4 @@
-package com.black.chorale;
+package com.blackstar.MkOpportunity.Mychoir;
 
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
@@ -11,8 +11,9 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-import com.black.chorale.Controleurs.ChantRepository;
-import com.black.chorale.ui.main.SectionsPagerAdapter;
+import com.black.chorale.R;
+import com.blackstar.MkOpportunity.Mychoir.Controleurs.ChantRepository;
+import com.blackstar.MkOpportunity.Mychoir.main.SectionsPagerAdapter;
 
 public class MainActivity extends AppCompatActivity {
 

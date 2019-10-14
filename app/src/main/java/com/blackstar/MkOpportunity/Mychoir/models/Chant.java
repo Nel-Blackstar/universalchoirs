@@ -1,4 +1,4 @@
-package com.black.chorale.models;
+package com.blackstar.MkOpportunity.Mychoir.models;
 
 public class Chant {
 

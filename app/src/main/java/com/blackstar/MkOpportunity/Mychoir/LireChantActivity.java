@@ -1,4 +1,4 @@
-package com.black.chorale;
+package com.blackstar.MkOpportunity.Mychoir;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -9,10 +9,10 @@ import android.view.MenuItem;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.black.chorale.Controleurs.ChantRepository;
-import com.black.chorale.Forms.ChoirForm;
-import com.black.chorale.Forms.ChoirFormUpdate;
-import com.black.chorale.models.Chant;
+import com.black.chorale.R;
+import com.blackstar.MkOpportunity.Mychoir.Controleurs.ChantRepository;
+import com.blackstar.MkOpportunity.Mychoir.Forms.ChoirFormUpdate;
+import com.blackstar.MkOpportunity.Mychoir.models.Chant;
 
 public class LireChantActivity extends AppCompatActivity {
         TextView titre=null;

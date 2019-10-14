@@ -1,10 +1,8 @@
-package com.black.chorale;
+package com.blackstar.MkOpportunity.Mychoir;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.text.Html;
-import android.text.Spanned;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -13,18 +11,12 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.black.chorale.Controleurs.ChantRepository;
-import com.black.chorale.Forms.ChoirForm;
-import com.black.chorale.adapters.BsAdapter;
-import com.black.chorale.models.Chant;
+import com.black.chorale.R;
+import com.blackstar.MkOpportunity.Mychoir.Controleurs.ChantRepository;
+import com.blackstar.MkOpportunity.Mychoir.Forms.ChoirForm;
+import com.blackstar.MkOpportunity.Mychoir.adapters.BsAdapter;
+import com.blackstar.MkOpportunity.Mychoir.models.Chant;
 
-import org.json.JSONArray;
-import org.json.JSONObject;
-
-import java.io.BufferedReader;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.util.ArrayList;
 import java.util.List;
 
 public class ChantsActivity extends AppCompatActivity {

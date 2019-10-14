@@ -1,4 +1,4 @@
-package com.black.chorale.Forms;
+package com.blackstar.MkOpportunity.Mychoir.Forms;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -11,19 +11,17 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-import com.black.chorale.ChantsActivity;
-import com.black.chorale.Controleurs.ChantRepository;
-import com.black.chorale.Controleurs.EvenementRepository;
-import com.black.chorale.Controleurs.FinanceRepository;
-import com.black.chorale.LireChantActivity;
+import com.blackstar.MkOpportunity.Mychoir.Controleurs.ChantRepository;
+import com.blackstar.MkOpportunity.Mychoir.Controleurs.EvenementRepository;
+import com.blackstar.MkOpportunity.Mychoir.Controleurs.FinanceRepository;
+import com.blackstar.MkOpportunity.Mychoir.LireChantActivity;
 import com.black.chorale.R;
-import com.black.chorale.models.Chant;
-import com.black.chorale.models.Evenement;
-import com.black.chorale.models.Finance;
+import com.blackstar.MkOpportunity.Mychoir.models.Chant;
+import com.blackstar.MkOpportunity.Mychoir.models.Evenement;
+import com.blackstar.MkOpportunity.Mychoir.models.Finance;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.Date;
 
 public class ChoirForm extends AppCompatActivity {
 public Button save;

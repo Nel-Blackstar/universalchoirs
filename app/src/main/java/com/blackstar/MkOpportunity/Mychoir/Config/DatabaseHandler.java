@@ -1,4 +1,4 @@
-package com.black.chorale.Config;
+package com.blackstar.MkOpportunity.Mychoir.Config;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -6,15 +6,14 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.text.Html;
 import android.text.Spanned;
-import android.util.Log;
 import android.widget.Toast;
 
-import com.black.chorale.Controleurs.ChantRepository;
-import com.black.chorale.Controleurs.ChoristeRepository;
-import com.black.chorale.Controleurs.EvenementRepository;
-import com.black.chorale.Controleurs.FinanceRepository;
+import com.blackstar.MkOpportunity.Mychoir.Controleurs.ChantRepository;
+import com.blackstar.MkOpportunity.Mychoir.Controleurs.ChoristeRepository;
+import com.blackstar.MkOpportunity.Mychoir.Controleurs.EvenementRepository;
+import com.blackstar.MkOpportunity.Mychoir.Controleurs.FinanceRepository;
 import com.black.chorale.R;
-import com.black.chorale.models.Chant;
+import com.blackstar.MkOpportunity.Mychoir.models.Chant;
 
 import org.json.JSONArray;
 import org.json.JSONObject;

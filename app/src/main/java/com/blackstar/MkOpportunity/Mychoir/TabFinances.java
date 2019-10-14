@@ -1,4 +1,4 @@
-package com.black.chorale;
+package com.blackstar.MkOpportunity.Mychoir;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,9 +9,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.black.chorale.Controleurs.FinanceRepository;
-import com.black.chorale.Forms.ChoirForm;
-import com.blackstar.MkOpportunity.Mychoir.ListActivity;
+import com.black.chorale.R;
+import com.blackstar.MkOpportunity.Mychoir.Controleurs.FinanceRepository;
+import com.blackstar.MkOpportunity.Mychoir.Forms.ChoirForm;
 
 public class TabFinances extends Fragment {
     TextView entrees;

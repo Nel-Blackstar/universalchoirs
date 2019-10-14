@@ -1,4 +1,4 @@
-package com.black.chorale;
+package com.blackstar.MkOpportunity.Mychoir;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,9 +10,8 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.LinearLayout;
 import android.widget.ListView;
-import android.widget.SimpleAdapter;
-import android.widget.TextView;
-import android.widget.Toast;
+
+import com.black.chorale.R;
 
 import java.util.ArrayList;
 import java.util.List;

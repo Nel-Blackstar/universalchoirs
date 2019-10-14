@@ -1,4 +1,4 @@
-package com.black.chorale;
+package com.blackstar.MkOpportunity.Mychoir;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,8 +8,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.black.chorale.Forms.ChoirForm;
-import com.blackstar.MkOpportunity.Mychoir.ListActivity;
+import com.black.chorale.R;
+import com.blackstar.MkOpportunity.Mychoir.Forms.ChoirForm;
 
 public class TabEvenements extends Fragment {
     MaterialCardView list;

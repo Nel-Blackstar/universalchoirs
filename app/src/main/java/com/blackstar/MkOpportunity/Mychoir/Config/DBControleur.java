@@ -1,9 +1,7 @@
-package com.black.chorale.Config;
+package com.blackstar.MkOpportunity.Mychoir.Config;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
-
-import com.black.chorale.Config.DatabaseHandler;
 
 public abstract class DBControleur {
 // Nous sommes à la première version de la base

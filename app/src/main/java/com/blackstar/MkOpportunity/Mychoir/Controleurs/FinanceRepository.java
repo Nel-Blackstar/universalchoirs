@@ -1,13 +1,12 @@
-package com.black.chorale.Controleurs;
+package com.blackstar.MkOpportunity.Mychoir.Controleurs;
 
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.util.Log;
 
-import com.black.chorale.Config.DBControleur;
-import com.black.chorale.models.Evenement;
-import com.black.chorale.models.Finance;
+import com.blackstar.MkOpportunity.Mychoir.Config.DBControleur;
+import com.blackstar.MkOpportunity.Mychoir.models.Finance;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

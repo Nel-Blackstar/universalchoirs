@@ -1,22 +1,16 @@
-package com.black.chorale.ui.main;
+package com.blackstar.MkOpportunity.Mychoir.main;
 
 import android.content.Context;
 import android.support.annotation.Nullable;
 import android.support.annotation.StringRes;
-import android.support.design.widget.CoordinatorLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v7.view.menu.MenuView;
-import android.view.LayoutInflater;
-import android.view.MenuItem;
-import android.view.View;
 
-import com.black.chorale.MainActivity;
-import com.black.chorale.TabEvenements;
-import com.black.chorale.TabFinances;
+import com.blackstar.MkOpportunity.Mychoir.TabEvenements;
+import com.blackstar.MkOpportunity.Mychoir.TabFinances;
 import com.black.chorale.R;
-import com.black.chorale.TabChants;
+import com.blackstar.MkOpportunity.Mychoir.TabChants;
 
 /**
  * A [FragmentPagerAdapter] that returns a fragment corresponding to
