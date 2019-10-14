@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.black.chorale">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo3d"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo3d"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.blackstar.MkOpportunity.Mychoir.ListActivity"></activity>
+        <activity
+            android:name=".Forms.ChoirFormUpdate"
+            android:label="@string/update" />
+        <activity
+            android:name=".Forms.ChoirForm"
+            android:label="@string/new_register" />
+        <activity
+            android:name=".LireChantActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ChantsActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

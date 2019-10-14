@@ -1,0 +1,64 @@
+﻿<resources>
+    <string name="app_name"><b>Universal choirs</b></string>
+    <string name="Chants">Chants</string>
+    <string name="Evenements">Evenements</string>
+    <string name="categories">Categories</string>
+    <string name="Finances">Finances</string>
+    <string name="choristes">Membres</string>
+    <string name="patron">St Patron</string>
+    <string name="contact_moi">Contacter le Developeur au +237 690 87 60 04 :)</string>
+    <string name="les_choriste">Les Choristes</string>
+    <string name="le_bureau">Le Bureau</string>
+    <string name="notre_st_patron">Notre St Patron</string>
+    <string name="parametres">Paramètres</string>
+    <string name="reglements">Reglements</string>
+    <string name="notre_paroise">Notre Paroise</string>
+    <string name="historique">Historique</string>
+    <string name="title_activity_chants">Chants</string>
+    <string name="about">A Propos</string>
+    <string name="titre">Titre</string>
+    <string name="refrain">Refrain</string>
+    <string name="contenue">Couplets</string>
+    <string name="p_entree">Entrées</string>
+    <string name="p_kyries">Kyries</string>
+    <string name="p_glorias">Glorias</string>
+    <string name="p_processions">Procéssions</string>
+    <string name="p_acclamations">Acclamations</string>
+    <string name="p_pu">Prières Universelle</string>
+    <string name="p_offertoires">Offertoires</string>
+    <string name="p_sanctus">Sanctus</string>
+    <string name="p_paters">Paters</string>
+    <string name="p_ad">Agneis deï</string>
+    <string name="p_communions">Communions</string>
+    <string name="p_sorties">Sorties</string>
+    <string name="p_divers">Animations et Divers</string>
+    <string name="p_credos">Credos</string>
+    <string name="quitterApp">Tapez sur retour une seconde fois pour quitter l\'Application</string>
+    <string name="your">votre</string>
+    <string name="new_register">Nouvel Enregistrement</string>
+    <string name="save">Enregistré</string>
+    <string name="reset">Annuler</string>
+    <string name="setup">Installation du package par defaut terminé avec Succès</string>
+    <string name="save_reset">Enregistrement annulé</string>
+    <string name="save_success">Enregistrement effectué</string>
+    <string name="update">Modification</string>
+    <string name="delete_success">Suppression terminé</string>
+    <string name="Action">Action</string>
+    <string name="solde">Solde</string>
+    <string name="f_sorties">Sorties</string>
+    <string name="f_entrees">Entrées</string>
+    <string name="events_recorded">"Evenements Enregistrés "</string>
+    <string name="future_events">Evenements Futur</string>
+    <string name="passed_events">Evenements Passées</string>
+    <array name="typeFinances">
+        <item>@string/f_entrees</item>
+        <item>@string/f_sorties</item>
+    </array>
+    <string name="montant">Montant</string>
+    <string name="information">Information</string>
+    <string name="date">Date</string>
+    <string name="type">Type</string>
+    <string name="concerned">Concerné</string>
+    <string name="place">Lieu</string>
+    <string name="reason">Raison</string>
+</resources>

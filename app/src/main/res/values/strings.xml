@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name"><b>Universal choirs</b></string>
+    <string name="Chants">Songs</string>
+    <string name="Evenements">Events</string>
+    <string name="Finances">Finance</string>
+    <string name="about">Abouts</string>
+    <string name="categories">Categories</string>
+    <string name="choristes">Members</string>
+    <string name="contact_moi">To contact the Developeur at +237 690 87 60 04:)</string>
+    <string name="contenue">Verses</string>
+    <string name="historique">History</string>
+    <string name="le_bureau">The Office</string>
+    <string name="les_choriste">The Choristers</string>
+    <string name="notre_paroise">Our Church</string>
+    <string name="notre_st_patron">Our godfather</string>
+    <string name="parametres">Parameters</string>
+    <string name="patron">godfather</string>
+    <string name="refrain">Chorus</string>
+    <string name="reglements">Regulations</string>
+    <string name="title_activity_chants">Songs</string>
+    <string name="titre">Title</string>
+    <string name="p_entree">Entries</string>
+    <string name="p_kyries">Kyries</string>
+    <string name="p_glorias">Glorias</string>
+    <string name="p_processions">Evangelical Procéssions</string>
+    <string name="p_acclamations">Cheering</string>
+    <string name="p_pu">Prayers Universal</string>
+    <string name="p_offertoires">Offertories </string>
+    <string name="p_sanctus">Sanctus</string>
+    <string name="p_paters">Paters</string>
+    <string name="p_ad">Agneis deï</string>
+    <string name="p_communions">Communions</string>
+    <string name="p_sorties">Exits</string>
+    <string name="p_divers">Animations and Various</string>
+    <string name="p_credos">Credos</string>
+    <string name="your">your</string>
+    <string name="quitterApp">Hit on return a second time to leave the application</string>
+    <string name="new_register">New Registration</string>
+    <string name="save">save</string>
+    <string name="reset">Reset</string>
+    <string name="setup">Installation of the default package finished with Success</string>
+    <string name="save_reset">Registration annulled</string>
+    <string name="save_success">Registration done</string>
+    <string name="update">Update</string>
+    <string name="delete_success">Deletion done</string>
+    <string name="Action">Action</string>
+    <string name="f_sorties">Left</string>
+    <string name="solde">Balance</string>
+    <string name="f_entrees">Entered</string>
+    <string name="events_recorded">Recorded Events</string>
+    <string name="future_events">Future Events</string>
+    <string name="passed_events">Passed Events</string>
+    <string name="montant">Amount</string>
+    <string name="type">Type</string>
+    <string name="information">Information</string>
+    <string name="date">Date</string>
+    <string name="reason">Reason</string>
+    <string name="place">Place</string>
+    <string name="concerned">Concerned</string>
+    <array name="typeFinances">
+        <item>@string/f_entrees</item>
+        <item>@string/f_sorties</item>
+    </array>
+</resources>

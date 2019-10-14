@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TableLayout
+        android:padding="5sp"
+        android:shrinkColumns="1"
+        android:stretchColumns="1"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <TableRow>
+            <TextView
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:text="@string/titre"
+                android:layout_marginLeft="20dp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:textSize="20dp"
+                android:layout_column="1"
+                android:layout_height="wrap_content" />
+        </TableRow>
+        <View
+            android:layout_height="2dip"
+            android:background="#FF909090"/>
+        <TableRow>
+            <TextView
+                android:id="@+id/titreChant"
+                android:layout_width="wrap_content"
+                android:text="Contenue Titre"
+                android:textSize="20dp"
+                android:layout_column="1"
+                android:textStyle="bold"
+                android:layout_span="1"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/refrain"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20dp"
+                android:layout_column="1"
+                android:layout_height="wrap_content" />
+        </TableRow>
+        <View
+            android:layout_height="2dip"
+            android:background="#FF909090"/>
+        <TableRow>
+            <TextView
+                android:id="@+id/refrainChant"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Contenue Refrain"
+                android:textSize="20dp"
+                android:layout_column="1"
+                android:layout_span="1"
+                android:layout_height="wrap_content" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/contenue"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_column="1"
+                android:layout_height="wrap_content" />
+        </TableRow>
+        <View
+            android:layout_height="2dip"
+            android:background="#FF909090"/>
+        <TableRow>
+            <TextView
+                android:id="@+id/contenueChant"
+                android:layout_width="wrap_content"
+                android:text="Contenue du chant"
+                android:textSize="20dp"
+                android:layout_column="1"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content" />
+        </TableRow>
+    </TableLayout>
+</ScrollView>
