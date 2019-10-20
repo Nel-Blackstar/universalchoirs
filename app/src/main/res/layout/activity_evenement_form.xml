@@ -96,19 +96,19 @@
                     android:id="@+id/save"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@color/colorPrimary"
-                    android:layout_marginRight="15dp"
+                    android:background="@color/success"
                     android:padding="10dp"
+                    android:layout_toRightOf="@id/reset"
                     android:textColor="#fff"
                     android:text="@string/save" />
                 <Button
                     android:id="@+id/reset"
+                    android:layout_marginRight="15dp"
                     android:textColor="#fff"
                     android:background="@color/colorBs"
                     android:layout_width="wrap_content"
                     android:padding="10dp"
                     android:layout_height="wrap_content"
-                    android:layout_toRightOf="@id/save"
                     android:text="@string/reset"/>
             </RelativeLayout>
         </TableRow>

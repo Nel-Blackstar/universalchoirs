@@ -2,29 +2,45 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.blackstar.MkOpportunity.Mychoir">
 
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/logo3d"
-        android:label="@string/app_name"
+        android:label="@string/my_choir"
         android:roundIcon="@drawable/logo3d"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.blackstar.MkOpportunity.Mychoir.ListActivity"></activity>
+        <activity android:name=".ReportActivity"></activity>
         <activity
-            android:name="com.blackstar.MkOpportunity.Mychoir.Forms.ChoirFormUpdate"
+            android:name=".ChoristeActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".PreferenceActivity"
+            android:label="@string/parametres" />
+        <activity android:name=".ShowActivity" />
+        <activity
+            android:name=".StaticActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".ListActivity" />
+        <activity
+            android:name=".Forms.ChoirFormUpdate"
             android:label="@string/update" />
         <activity
-            android:name="com.blackstar.MkOpportunity.Mychoir.Forms.ChoirForm"
+            android:name=".Forms.ChoirForm"
             android:label="@string/new_register" />
         <activity
-            android:name="com.blackstar.MkOpportunity.Mychoir.LireChantActivity"
-            android:parentActivityName="com.blackstar.MkOpportunity.Mychoir.MainActivity" />
+            android:name=".LireChantActivity"
+            android:parentActivityName=".MainActivity" />
         <activity
-            android:name="com.blackstar.MkOpportunity.Mychoir.ChantsActivity"
-            android:parentActivityName="com.blackstar.MkOpportunity.Mychoir.MainActivity" />
+            android:name=".ChantsActivity"
+            android:parentActivityName=".MainActivity" />
         <activity
-            android:name="com.blackstar.MkOpportunity.Mychoir.MainActivity"
-            android:label="@string/app_name"
+            android:name=".MainActivity"
+            android:label="@string/my_choir"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

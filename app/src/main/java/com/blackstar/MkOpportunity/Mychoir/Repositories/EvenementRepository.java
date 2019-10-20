@@ -1,4 +1,4 @@
-package com.blackstar.MkOpportunity.Mychoir.Controleurs;
+package com.blackstar.MkOpportunity.Mychoir.Repositories;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -7,8 +7,6 @@ import android.database.Cursor;
 import com.blackstar.MkOpportunity.Mychoir.Config.DBControleur;
 import com.blackstar.MkOpportunity.Mychoir.models.Evenement;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -34,7 +32,7 @@ public class EvenementRepository extends DBControleur {
 
     public void save(Evenement evenement){
         ContentValues value = new ContentValues();
-        value.put(EvenementRepository.DATE,evenement.getDate().toString());
+        value.put(EvenementRepository.DATE,evenement.getDate());
         value.put(EvenementRepository.LIEU,evenement.getLieu());
         value.put(EvenementRepository.CONCERNE,evenement.getConcerne());
         value.put(EvenementRepository.RAISON,evenement.getRaison());
@@ -43,16 +41,15 @@ public class EvenementRepository extends DBControleur {
     public void delete(long id) {
         mDb.delete(TABLE_NAME, KEY + " = ?", new String[]{String.valueOf(id)});
     }
+    public void clean() {
+        mDb.delete(TABLE_NAME, KEY + " > ?", new String[]{String.valueOf(0)});
+    }
     public Evenement find(long id) {
         Cursor c= mDb.rawQuery("select "+KEY+" as _id, * from " + TABLE_NAME + " where "+KEY+" = ?", new String[]{String.valueOf(id)});
         Evenement evenement = new Evenement();
         while (c.moveToNext()) {
             evenement.setId(c.getLong(c.getColumnIndex(KEY)));
-            try {
-                evenement.setDate(new SimpleDateFormat("dd/MM/yyyy").parse(c.getString(c.getColumnIndex(DATE))));
-            } catch (ParseException e) {
-                e.printStackTrace();
-            }
+            evenement.setDate(c.getString(c.getColumnIndex(DATE)));
             evenement.setLieu(c.getString(c.getColumnIndex(LIEU)));
             evenement.setConcerne(c.getString(c.getColumnIndex(CONCERNE)));
             evenement.setRaison(c.getString(c.getColumnIndex(RAISON)));
@@ -62,7 +59,7 @@ public class EvenementRepository extends DBControleur {
 
     public void  update(Evenement evenement){
         ContentValues value = new ContentValues();
-        value.put(EvenementRepository.DATE,evenement.getDate().toString());
+        value.put(EvenementRepository.DATE,evenement.getDate());
         value.put(EvenementRepository.LIEU,evenement.getLieu());
         value.put(EvenementRepository.CONCERNE,evenement.getConcerne());
         value.put(EvenementRepository.RAISON,evenement.getRaison());
@@ -71,15 +68,11 @@ public class EvenementRepository extends DBControleur {
 
     public List<Evenement> findAll(){
         List<Evenement> evenements=new ArrayList<Evenement>();
-        Cursor c= mDb.rawQuery("select "+KEY+" as _id, * from " + TABLE_NAME + " where id > ?", new String[]{"0"});
+        Cursor c= mDb.rawQuery("select "+KEY+" as _id, * from " + TABLE_NAME + " where id > ? ORDER BY "+KEY+" DESC", new String[]{"0"});
         while (c.moveToNext()){
             Evenement evenement=new Evenement();
             evenement.setId(c.getLong(c.getColumnIndex(KEY)));
-            try {
-                evenement.setDate(new SimpleDateFormat("dd/MM/yyyy").parse(c.getString(c.getColumnIndex(DATE))));
-            } catch (ParseException e) {
-                e.printStackTrace();
-            }
+            evenement.setDate(c.getString(c.getColumnIndex(DATE)));
             evenement.setLieu(c.getString(c.getColumnIndex(LIEU)));
             evenement.setConcerne(c.getString(c.getColumnIndex(CONCERNE)));
             evenement.setRaison(c.getString(c.getColumnIndex(RAISON)));
@@ -95,11 +88,7 @@ public class EvenementRepository extends DBControleur {
         while (c.moveToNext()){
             Evenement evenement=new Evenement();
             evenement.setId(c.getLong(c.getColumnIndex(KEY)));
-            try {
-                evenement.setDate(new SimpleDateFormat("dd/MM/yyyy").parse(c.getString(c.getColumnIndex(DATE))));
-            } catch (ParseException e) {
-                e.printStackTrace();
-            }
+            evenement.setDate(c.getString(c.getColumnIndex(DATE)));
             evenement.setLieu(c.getString(c.getColumnIndex(LIEU)));
             evenement.setConcerne(c.getString(c.getColumnIndex(CONCERNE)));
             evenement.setRaison(c.getString(c.getColumnIndex(RAISON)));
@@ -114,11 +103,7 @@ public class EvenementRepository extends DBControleur {
         Evenement evenement = new Evenement();
         while (c.moveToNext()) {
             evenement.setId(c.getLong(c.getColumnIndex(KEY)));
-            try {
-                evenement.setDate(new SimpleDateFormat("dd/MM/yyyy").parse(c.getString(c.getColumnIndex(DATE))));
-            } catch (ParseException e) {
-                e.printStackTrace();
-            }
+            evenement.setDate(c.getString(c.getColumnIndex(DATE)));
             evenement.setLieu(c.getString(c.getColumnIndex(LIEU)));
             evenement.setConcerne(c.getString(c.getColumnIndex(CONCERNE)));
             evenement.setRaison(c.getString(c.getColumnIndex(RAISON)));

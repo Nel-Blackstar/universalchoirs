@@ -10,9 +10,6 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.LinearLayout;
 import android.widget.ListView;
-
-import com.black.chorale.R;
-
 import java.util.ArrayList;
 import java.util.List;
 

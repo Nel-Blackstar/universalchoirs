@@ -57,9 +57,42 @@
     <string name="date">Date</string>
     <string name="reason">Reason</string>
     <string name="place">Place</string>
+    <string name="done">Done</string>
     <string name="concerned">Concerned</string>
+    <string name="Asked_by">Asked by</string>
+    <string name="clean_data">Clean Data</string>
     <array name="typeFinances">
         <item>@string/f_entrees</item>
         <item>@string/f_sorties</item>
     </array>
+    <string name="my_choir" translatable="false">St Antoine De Padoue</string>
+    <string name="canceled">Operation canceled</string>
+    <string name="delete">Delete</string>
+    <string name="delete_confirm">Delete Confirm</string>
+    <string name="delet_confirm_msg">Do you want indeed done this action?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="details">details</string>
+    <string name="no_available_result">No available Result</string>
+    <string name="biographie">Born in 1998 in the city of Bamougoum in western Cameroon in a Catholic family, Mogo Gabiapsi Ivan is a little computer genius since a young age, designing his first programs as a teenager. At the age of 18, he joined The African Institute of Informatics, and it is here, in 2019, that he creates takes his flight by working on numerous projects in various fields.</string>
+    <string name="basic_project">Basic project</string>
+    <string name="my_information">My Informations</string>
+    <string name="name">Name</string>
+    <string name="subname">Subname</string>
+    <string name="contact">Contact</string>
+    <string name="profession">Profession</string>
+    <string name="date_of_birth">Date of birth</string>
+    <string name="gender">Gender</string>
+    <string name="desk">Desk</string>
+    <string name="role">role</string>
+    <string name="notification_by_sms">Notification by SMS</string>
+    <string name="send">Send</string>
+    <string name="back">Back</string>
+    <string name="show_my_information_has_the_home">Show my information has the home</string>
+    <string name="about_you">About you</string>
+    <string name="generate_the_report">Generate the Report</string>
+    <string name="beginning_of_exercise">beginning of exercise</string>
+    <string name="end_of_exercise">End of exercise</string>
+    <string name="result_period">Result of period</string>
+    <string name="thanks_eval">thank for your Assessment</string>
 </resources>

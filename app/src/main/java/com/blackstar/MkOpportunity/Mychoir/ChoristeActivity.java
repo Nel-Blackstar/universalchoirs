@@ -12,45 +12,40 @@ import android.widget.ListView;
 
 import com.blackstar.MkOpportunity.Mychoir.Repositories.ChantRepository;
 import com.blackstar.MkOpportunity.Mychoir.Forms.ChoirForm;
-import com.blackstar.MkOpportunity.Mychoir.adapters.ChantAdapter;
-import com.blackstar.MkOpportunity.Mychoir.models.Chant;
+import com.blackstar.MkOpportunity.Mychoir.Repositories.ChoristeRepository;
+import com.blackstar.MkOpportunity.Mychoir.adapters.ChoristeAdapter;
+import com.blackstar.MkOpportunity.Mychoir.models.Choriste;
 
 import java.util.List;
 
-public class ChantsActivity extends AppCompatActivity {
+public class ChoristeActivity extends AppCompatActivity {
 
-    List<Chant> chants=null;
-    ListView listView=null;
-    int categorie;
-    String categorieDB=null;
-    public  ChantRepository chantRepository;
+    public ListView listView;
+    public List<Choriste> choristes;
+    public ChoristeRepository choristeRepository;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        chantRepository = new ChantRepository(getApplicationContext());
-        chantRepository.open();
+        choristeRepository = new ChoristeRepository(getApplicationContext());
+        choristeRepository.open();
+        setTitle(R.string.les_choriste);
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_chants);
-        final Intent intent=getIntent();
-        Bundle db= intent.getExtras();
-        String categorie=db.get("categorie").toString();
-        categorieDB=categorie;
-        int cat =(int) db.get("idcategorie");
-        this.categorie=cat;
-        setTitle(getString(cat));
+        setContentView(R.layout.activity_choriste);
+        listView=findViewById(R.id.listChoriste);
     }
 
     @Override
     protected void onResume() {
-        chants=chantRepository.findByCategorie(categorieDB);
-        ChantAdapter chantAdapter =new ChantAdapter(this,R.layout.adapter,chants);
-        listView=findViewById(R.id.list_chant);
-        listView.setAdapter(chantAdapter);
+        choristes=choristeRepository.findAll();
+        ChoristeAdapter choristeAdapter =new ChoristeAdapter(this,R.layout.adapter,choristes);
+        listView=findViewById(R.id.listChoriste);
+        listView.setAdapter(choristeAdapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent lire=new Intent(ChantsActivity.this,LireChantActivity.class);
-                lire.putExtra("id",chants.get(position).getId());
+                Intent lire=new Intent(ChoristeActivity.this,ShowActivity.class);
+                lire.putExtra("id",choristes.get(position).getId());
+                lire.putExtra("type","choriste");
                 startActivity(lire);
             }
         });
@@ -69,10 +64,9 @@ public class ChantsActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         Intent i;
         if (item.getItemId()==R.id.add){
-                i=new Intent(getApplicationContext(), ChoirForm.class);
-                i.putExtra("type","Chant");
-                i.putExtra("categorie",categorieDB);
-                startActivity(i);
+            i=new Intent(getApplicationContext(), ChoirForm.class);
+            i.putExtra("type","Choriste");
+            startActivity(i);
         }
         return super.onOptionsItemSelected(item);
     }

@@ -9,15 +9,17 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.black.chorale.R;
-import com.blackstar.MkOpportunity.Mychoir.models.Chant;
+import com.blackstar.MkOpportunity.Mychoir.R;
+import com.blackstar.MkOpportunity.Mychoir.models.Choriste;
 
+import java.util.ArrayList;
 import java.util.List;
-public class BsAdapter extends ArrayAdapter<Chant> {
-    List<Chant> chants=null;
-    public BsAdapter(Context context, int resource, List<Chant> objects) {
+
+public class ChoristeAdapter extends ArrayAdapter<Choriste> {
+    List<Choriste> choristes=null;
+    public ChoristeAdapter(Context context, int resource, List<Choriste> objects) {
         super(context, resource, objects);
-        this.chants=objects;
+        this.choristes=objects;
     }
 
     @NonNull
@@ -27,14 +29,16 @@ public class BsAdapter extends ArrayAdapter<Chant> {
 	View ligne=null;
 	/* if(convertView != null){
 	ligne=convertView;
-	}else{*/
-        ligne=layoutInflater.inflate(R.layout.adapter,parent,false);
+	}else{*/ligne=layoutInflater.inflate(R.layout.adapter3,parent,false);
         ImageView image=ligne.findViewById(R.id.image);
         TextView titre=ligne.findViewById(R.id.titre);
         TextView sous_titre=ligne.findViewById(R.id.sous_titre);
-        image.setImageResource(R.drawable.ic_queue_music_black_24dp);
-        titre.setText(chants.get(position).titre);
-        sous_titre.setText(chants.get(position).refrain);
+        TextView libeller=ligne.findViewById(R.id.libeller);
+        image.setImageResource(R.drawable.choirs);
+        titre.setText(choristes.get(position).nom+" "+choristes.get(position).prenom);
+        libeller.setText(choristes.get(position).role);
+        libeller.setTextColor(getContext().getResources().getColor(R.color.colorPrimary));
+        sous_titre.setText(choristes.get(position).pupiptre);
 	//}
         return ligne;
     }

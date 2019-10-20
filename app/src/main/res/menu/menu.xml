@@ -3,16 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/find"
-        android:icon="@drawable/ic_search_black_24dp"
+        android:icon="@android:drawable/ic_menu_search"
         android:title="Search"
-        app:actionViewClass="android.widget.SearchView"
-        app:showAsAction="always" />
+        android:iconTint="@android:drawable/ic_menu_search"
+        android:tooltipText="Search"
+        app:showAsAction="always|collapseActionView"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        />
     <item android:title="@string/les_choriste" android:id="@+id/choristes"></item>
-    <item android:title="@string/le_bureau" android:id="@+id/bureau"></item>
-    <item android:title="@string/notre_paroise" android:id="@+id/paroise"></item>
+    <!--<item android:title="@string/notre_paroise" android:id="@+id/paroise"></item>
     <item android:title="@string/reglements" android:id="@+id/Reglements"></item>
-    <item android:title="@string/notre_st_patron" android:id="@+id/stPatron"></item>
-    <item android:title="@string/historique" android:id="@+id/histoire"></item>
+    <item android:title="@string/notre_st_patron" android:id="@+id/stPatron"></item>-->
     <item android:title="@string/parametres" android:id="@+id/params"></item>
     <item android:title="@string/about" android:icon="@android:drawable/ic_dialog_info" android:id="@+id/abouts"></item>
 </menu>

@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ListActivity">
+    tools:context=".ChoristeActivity">
+    <ListView
+        android:id="@+id/listChoriste"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
 
- <ListView
-     android:id="@+id/listes"
-     android:layout_width="match_parent"
-     android:layout_height="match_parent"></ListView>
 </android.support.constraint.ConstraintLayout>

@@ -8,11 +8,11 @@ import android.text.Html;
 import android.text.Spanned;
 import android.widget.Toast;
 
-import com.blackstar.MkOpportunity.Mychoir.Controleurs.ChantRepository;
-import com.blackstar.MkOpportunity.Mychoir.Controleurs.ChoristeRepository;
-import com.blackstar.MkOpportunity.Mychoir.Controleurs.EvenementRepository;
-import com.blackstar.MkOpportunity.Mychoir.Controleurs.FinanceRepository;
-import com.black.chorale.R;
+import com.blackstar.MkOpportunity.Mychoir.Repositories.ChantRepository;
+import com.blackstar.MkOpportunity.Mychoir.Repositories.ChoristeRepository;
+import com.blackstar.MkOpportunity.Mychoir.Repositories.EvenementRepository;
+import com.blackstar.MkOpportunity.Mychoir.Repositories.FinanceRepository;
+import com.blackstar.MkOpportunity.Mychoir.R;
 import com.blackstar.MkOpportunity.Mychoir.models.Chant;
 
 import org.json.JSONArray;

@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class Finance {
     public Long id;
-    public Date date;
+    public String date;
     public String libeller;
     public String type;
     public  Double montant;
@@ -12,7 +12,7 @@ public class Finance {
     public Finance() {
     }
 
-    public Finance(Date date, String libeller, String type, Double montant) {
+    public Finance(String date, String libeller, String type, Double montant) {
         this.date = date;
         this.libeller = libeller;
         this.type = type;
@@ -27,11 +27,11 @@ public class Finance {
         this.id = id;
     }
 
-    public Date getDate() {
+    public String getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(String date) {
         this.date = date;
     }
 

@@ -1,4 +1,4 @@
-package com.blackstar.MkOpportunity.Mychoir.Controleurs;
+package com.blackstar.MkOpportunity.Mychoir.Repositories;
 
 import android.content.ContentValues;
 import android.content.Context;

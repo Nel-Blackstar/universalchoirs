@@ -61,4 +61,36 @@
     <string name="concerned">Concerné</string>
     <string name="place">Lieu</string>
     <string name="reason">Raison</string>
+    <string name="clean_data">Effacé les données</string>
+    <string name="done">Terminé</string>
+    <string name="Asked_by">"Demandé Par "</string>
+    <string name="canceled">Operation Annulé</string>
+    <string name="delete">Supprimé</string>
+    <string name="delete_confirm">confirmé la suppression</string>
+    <string name="delet_confirm_msg">Voulez vous vraiment effectué cette action ?</string>
+    <string name="yes">Oui</string>
+    <string name="no">Non</string>
+    <string name="details">details</string>
+    <string name="no_available_result">"No available Result "</string>
+    <string name="biographie">Né en 1998 dans la ville de Bamougoum dans l’Ouest Cameroun au sein d\'une famille catholique, Mogo Gabiapsi Ivan est un petit génie de l\'informatique depuis tout jeune, concevant ses premiers programmes dès l\'adolescence. A 18 ans, il entre dans la prestigieuse Institut Africaine Informatique, et c\'est là, en 2019, qu\'il crée prend véritable son envol en travaillant sur de nombreux projets dans divers domaines</string>
+    <string name="basic_project">Projet de base</string>
+    <string name="my_information">Mes informations</string>
+    <string name="name">Nom</string>
+    <string name="subname">Prenom</string>
+    <string name="contact">Contact</string>
+    <string name="date_of_birth">Date de Naissance</string>
+    <string name="desk">Pupitre</string>
+    <string name="role">rôle</string>
+    <string name="profession">Profession</string>
+    <string name="gender">Sexe</string>
+    <string name="notification_by_sms">Notification par SMS</string>
+    <string name="send">Envoyer</string>
+    <string name="back">Retour</string>
+    <string name="show_my_information_has_the_home">Affiché mes informations a l\'acceuil</string>
+    <string name="about_you" translatable="false">A propos de vous</string>
+    <string name="generate_the_report">Génere le Rapport</string>
+    <string name="beginning_of_exercise">Debut d\'exercice</string>
+    <string name="end_of_exercise">Fin d\'exercice</string>
+    <string name="result_period">Résultats de Periode</string>
+    <string name="thanks_eval">Merci pour votre Evaluation</string>
 </resources>

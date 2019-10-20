@@ -1,13 +1,13 @@
 package com.blackstar.MkOpportunity.Mychoir.models;
 
-import java.util.Date;
 
 public class Choriste {
     public  Long id;
     public  String nom;
     public  String prenom;
     public  String contact;
-    public Date dateNaissance;
+    public String sexe;
+    public String dateNaissance;
     public  String pupiptre;
     public  String role;
     public  String profession;
@@ -15,7 +15,7 @@ public class Choriste {
     public Choriste() {
     }
 
-    public Choriste(Long id, String nom, String prenom, String contact, Date dateNaissance, String pupiptre, String role, String profession) {
+    public Choriste(Long id, String nom, String prenom, String contact, String dateNaissance, String pupiptre, String role, String profession) {
         this.id = id;
         this.nom = nom;
         this.prenom = prenom;
@@ -24,6 +24,14 @@ public class Choriste {
         this.pupiptre = pupiptre;
         this.role = role;
         this.profession = profession;
+    }
+
+    public String getSexe() {
+        return sexe;
+    }
+
+    public void setSexe(String sexe) {
+        this.sexe = sexe;
     }
 
     public Long getId() {
@@ -58,11 +66,11 @@ public class Choriste {
         this.contact = contact;
     }
 
-    public Date getDateNaissance() {
+    public String getDateNaissance() {
         return dateNaissance;
     }
 
-    public void setDateNaissance(Date dateNaissance) {
+    public void setDateNaissance(String dateNaissance) {
         this.dateNaissance = dateNaissance;
     }
 

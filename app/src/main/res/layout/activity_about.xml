@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="2"
+        tools:context=".StaticActivity">
+
+        <ImageView
+            android:layout_width="37dp"
+            android:layout_height="260dp"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_column="0"
+            android:layout_gravity="left"
+            android:foregroundGravity="left"
+            android:src="@drawable/blackstar" />
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_marginBottom="10dp"
+                android:textSize="14dp"
+                android:text="Mogo Gabiapsi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginBottom="10dp"
+                android:textSize="14dp"
+                android:text="Ivan Nelson"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginBottom="10dp"
+                android:textSize="14dp"
+                android:textColor="@color/colorPrimary"
+                android:text="+237 690876004"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginBottom="10dp"
+                android:textSize="14dp"
+                android:text="Ingenieur, Genie Logiciel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TableRow android:gravity="center_horizontal"
+            android:layout_margin="15dp">
+            <TextView android:textSize="16dp"
+                android:layout_column="0"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/basic_project"/>
+        </TableRow>
+        <TableRow android:gravity="center_horizontal">
+            <TextView android:textSize="16dp"
+                android:layout_column="0"
+                android:layout_gravity="center_horizontal"
+                android:textStyle="bold"
+                android:text="Saint Antoine De Padoue Banengo,Brasserie"/>
+        </TableRow>
+        <TableRow android:gravity="center_horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_margin="15dp"
+                android:foregroundGravity="clip_horizontal"
+                android:textAlignment="gravity"
+                android:layout_height="wrap_content"
+                android:text="@string/biographie"/>
+        </TableRow>
+
+        <TableRow android:gravity="center_horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_margin="15dp"
+                android:textAlignment="textEnd"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBs"
+                android:text="© Make Opportunity 2019"
+                android:gravity="end" />
+        </TableRow>
+    </TableLayout>
+</ScrollView>
