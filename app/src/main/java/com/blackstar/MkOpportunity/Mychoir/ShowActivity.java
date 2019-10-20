@@ -63,6 +63,7 @@ public class ShowActivity extends AppCompatActivity {
     public TextView roleData;
     public  TextView contactData;
     public  TextView naissanceData;
+    public  ImageView call;
     /*fin  gestion de choriste */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -77,6 +78,7 @@ public class ShowActivity extends AppCompatActivity {
         type=getIntent().getExtras().get("type").toString();
         id=Long.parseLong(getIntent().getExtras().get("id").toString());
         imageView=findViewById(R.id.image);
+        call=findViewById(R.id.call);
         evenementView=findViewById(R.id.evenement);
         financeView=findViewById(R.id.finance);
         notify=findViewById(R.id.notify);
@@ -142,6 +144,14 @@ public class ShowActivity extends AppCompatActivity {
                 contactData.setText(choriste.getContact());
                 pupitreData.setText(choriste.getPupiptre());
                 choristeView.setVisibility(View.VISIBLE);
+                call.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        String telURI = "tel:" +choriste.getContact();
+                        Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse(telURI));
+                        startActivity(intent);
+                    }
+                });
                 break;
         }
         super.onResume();
