@@ -4,6 +4,9 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
+import android.text.Editable;
+import android.text.TextWatcher;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.CompoundButton;
 import android.widget.EditText;
@@ -32,22 +35,38 @@ public class PreferenceActivity extends AppCompatActivity {
         noteData=findViewById(R.id.note);
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
         editor = preferences.edit();
-        nameData.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+        nameData.addTextChangedListener(new TextWatcher() {
             @Override
-            public void onFocusChange(View v, boolean hasFocus) {
-                if (!hasFocus){
-                    editor.putString(NAME, nameData.getText().toString());
-                    editor.commit();
-                }
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                editor.putString(NAME, nameData.getText().toString());
+                editor.commit();
             }
         });
-        subnameData.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+        subnameData.addTextChangedListener(new TextWatcher() {
             @Override
-            public void onFocusChange(View v, boolean hasFocus) {
-                if (!hasFocus){
-                    editor.putString(SUBNAME, subnameData.getText().toString());
-                    editor.commit();
-                }
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                editor.putString(SUBNAME, subnameData.getText().toString());
+                editor.commit();
             }
         });
         showData.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {

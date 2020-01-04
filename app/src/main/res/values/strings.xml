@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name"><b>Universal choirs</b></string>
+    <string name="app_name"><b>Catholic choirs</b></string>
     <string name="Chants">Songs</string>
     <string name="Evenements">Events</string>
     <string name="Finances">Finance</string>
@@ -65,7 +65,7 @@
         <item>@string/f_entrees</item>
         <item>@string/f_sorties</item>
     </array>
-    <string name="my_choir" translatable="false">St Antoine De Padoue</string>
+    <string name="my_choir"><b>Catholic choirs</b></string>
     <string name="canceled">Operation canceled</string>
     <string name="delete">Delete</string>
     <string name="delete_confirm">Delete Confirm</string>
@@ -96,4 +96,5 @@
     <string name="result_period">Result of period</string>
     <string name="thanks_eval">thank for your Assessment</string>
     <string name="call">Call</string>
+    <string name="no_choir">No chorister recorded</string>
 </resources>

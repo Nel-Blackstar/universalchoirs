@@ -11,6 +11,7 @@
         tools:context=".StaticActivity">
 
         <ImageView
+            android:contentDescription="blackstar"
             android:layout_width="37dp"
             android:layout_height="260dp"
             android:layout_marginTop="@dimen/activity_vertical_margin"

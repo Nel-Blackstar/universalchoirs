@@ -273,8 +273,8 @@ public class ShowActivity extends AppCompatActivity {
             }
             i++;
         }
-        final String notifEvent="Mes salutations les plus distinguer a Tous, Just pour vous faire part de la mobilisation du "+evenement.getDate()+" à "+
-                evenement.getLieu()+" Soyons nombreux au nom de "+evenement.getConcerne()+" Pour cette animation de "+evenement.getRaison();
+        final String notifEvent="Salut chers Choriste juste pour  rapel : le "+evenement.getDate()+" à "+
+                evenement.getLieu()+" Soyons nombreux Pour "+evenement.getConcerne()+" \n NB: "+evenement.getRaison();
         title.setText("SMS "+evenement.getRaison());
         message.setText(notifEvent);
         final String finalNumChoriste = numChoriste;
@@ -282,8 +282,13 @@ public class ShowActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 SmsManager manager = SmsManager.getDefault();
-                manager.sendTextMessage(finalNumChoriste, null, message.getText().toString(),null, null);
-                Toast.makeText(getApplicationContext(),getString(R.string.done),Toast.LENGTH_SHORT).show();
+                if (finalNumChoriste.length()>2){
+                    Log.v("Les_numeros",finalNumChoriste);
+                    manager.sendTextMessage(finalNumChoriste, null, message.getText().toString(),null, null);
+                    Toast.makeText(getApplicationContext(),getString(R.string.done),Toast.LENGTH_SHORT).show();
+                }else {
+                    Toast.makeText(getApplicationContext(),getString(R.string.no_choir),Toast.LENGTH_SHORT).show();
+                }
                 alertDialog.dismiss();
                 finish();
             }

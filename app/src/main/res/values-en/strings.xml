@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name"><b>Universal choirs</b></string>
+    <string name="app_name"><b>Catholic choirs</b></string>
     <string name="Chants">Songs</string>
     <string name="Evenements">Events</string>
     <string name="Finances">Finance</string>
@@ -95,4 +95,6 @@
     <string name="result_period">Result of period</string>
     <string name="thanks_eval">thank for your Assessment</string>
     <string name="call">Appeler</string>
+    <string name="no_choir">No chorister recorded</string>
+    <string name="my_choir" translatable="false"><b>Catholic choirs</b></string>
 </resources>

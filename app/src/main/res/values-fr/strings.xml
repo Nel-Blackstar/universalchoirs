@@ -1,5 +1,5 @@
 ﻿<resources>
-    <string name="app_name"><b>Universal choirs</b></string>
+    <string name="app_name"><b>Chorale Catholique</b></string>
     <string name="Chants">Chants</string>
     <string name="Evenements">Evenements</string>
     <string name="categories">Categories</string>
@@ -71,7 +71,7 @@
     <string name="yes">Oui</string>
     <string name="no">Non</string>
     <string name="details">details</string>
-    <string name="no_available_result">"No available Result "</string>
+    <string name="no_available_result">Aucun Resultat Disponible</string>
     <string name="biographie">Né en 1998 dans la ville de Bamougoum dans l’Ouest Cameroun au sein d\'une famille catholique, Mogo Gabiapsi Ivan est un petit génie de l\'informatique depuis tout jeune, concevant ses premiers programmes dès l\'adolescence. A 18 ans, il entre dans la prestigieuse Institut Africaine Informatique, et c\'est là, en 2019, qu\'il crée prend véritable son envol en travaillant sur de nombreux projets dans divers domaines</string>
     <string name="basic_project">Projet de base</string>
     <string name="my_information">Mes informations</string>
@@ -94,4 +94,5 @@
     <string name="result_period">Résultats de Periode</string>
     <string name="thanks_eval">Merci pour votre Evaluation</string>
     <string name="call">Appeler</string>
+    <string name="no_choir">Aucun Choriste enregistré</string>
 </resources>
