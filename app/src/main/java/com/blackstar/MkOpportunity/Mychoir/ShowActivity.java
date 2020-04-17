@@ -1,8 +1,13 @@
 package com.blackstar.MkOpportunity.Mychoir;
 
+import android.Manifest;
 import android.app.AlertDialog;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.net.Uri;
+import android.support.annotation.NonNull;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.telephony.SmsManager;
@@ -28,7 +33,8 @@ import com.blackstar.MkOpportunity.Mychoir.models.Finance;
 
 public class ShowActivity extends AppCompatActivity {
 
-        EvenementRepository evenementRepository;
+    private static final int MY_SMS_PERMISSION = 1234;
+    EvenementRepository evenementRepository;
         FinanceRepository financeRepository;
         ChoristeRepository choristeRepository;
         Long id;
@@ -147,9 +153,17 @@ public class ShowActivity extends AppCompatActivity {
                 call.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        String telURI = "tel:" +choriste.getContact();
-                        Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse(telURI));
-                        startActivity(intent);
+                        if (ContextCompat.checkSelfPermission(ShowActivity.this, Manifest.permission.CALL_PHONE)
+                                == PackageManager.PERMISSION_GRANTED) {
+                            String telURI = "tel:" +choriste.getContact();
+                            Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse(telURI));
+                            startActivity(intent);
+                        }else {
+                            ActivityCompat.requestPermissions(ShowActivity.this,
+                                    new String[]{Manifest.permission.CALL_PRIVILEGED,Manifest.permission.CALL_PHONE,Manifest.permission.ANSWER_PHONE_CALLS},
+                                    1243);
+                            Toast.makeText(getApplicationContext(),getString(R.string.reload),Toast.LENGTH_SHORT).show();
+                        }
                     }
                 });
                 break;
@@ -283,9 +297,16 @@ public class ShowActivity extends AppCompatActivity {
             public void onClick(View v) {
                 SmsManager manager = SmsManager.getDefault();
                 if (finalNumChoriste.length()>2){
-                    Log.v("Les_numeros",finalNumChoriste);
-                    manager.sendTextMessage(finalNumChoriste, null, message.getText().toString(),null, null);
-                    Toast.makeText(getApplicationContext(),getString(R.string.done),Toast.LENGTH_SHORT).show();
+                    if (ContextCompat.checkSelfPermission(ShowActivity.this, Manifest.permission.SEND_SMS)
+                            == PackageManager.PERMISSION_GRANTED) {
+                        manager.sendTextMessage(finalNumChoriste, null, message.getText().toString(),null, null);
+                        Toast.makeText(getApplicationContext(),getString(R.string.done),Toast.LENGTH_SHORT).show();
+                    }else {
+                        ActivityCompat.requestPermissions(ShowActivity.this,
+                                new String[]{Manifest.permission.SEND_SMS},
+                                MY_SMS_PERMISSION);
+                        Toast.makeText(getApplicationContext(),getString(R.string.reload),Toast.LENGTH_SHORT).show();
+                    }
                 }else {
                     Toast.makeText(getApplicationContext(),getString(R.string.no_choir),Toast.LENGTH_SHORT).show();
                 }
@@ -300,5 +321,10 @@ public class ShowActivity extends AppCompatActivity {
             }
         });
         alertDialog.show();
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
     }
 }

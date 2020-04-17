@@ -97,4 +97,5 @@
     <string name="thanks_eval">thank for your Assessment</string>
     <string name="call">Call</string>
     <string name="no_choir">No chorister recorded</string>
+    <string name="reload">try again</string>
 </resources>

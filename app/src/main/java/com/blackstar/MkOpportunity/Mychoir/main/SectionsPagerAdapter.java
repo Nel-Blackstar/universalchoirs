@@ -11,12 +11,13 @@ import com.blackstar.MkOpportunity.Mychoir.TabEvenements;
 import com.blackstar.MkOpportunity.Mychoir.TabFinances;
 import com.blackstar.MkOpportunity.Mychoir.TabChants;
 import com.blackstar.MkOpportunity.Mychoir.R;
+
+
 /**
  * A [FragmentPagerAdapter] that returns a fragment corresponding to
  * one of the sections/tabs/pages.
  */
 public class SectionsPagerAdapter extends FragmentPagerAdapter {
-    @StringRes
     private static final int[] TAB_TITLES = new int[]{R.string.Chants, R.string.Evenements,R.string.Finances};
     private final Context mContext;
 
